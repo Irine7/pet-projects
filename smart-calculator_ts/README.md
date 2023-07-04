@@ -1,4 +1,4 @@
-# 🧮 Welcome to the calculator project!
+# 🧮  Welcome to the calculator project!
 
 This is a calculator app  with saving history, calculating percents and ligth/dark theme.
 The tools used in this project are **Webpack**, **TypeScript** and **ESlint**.
