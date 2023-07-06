@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+
+:root {
+	/* Color */
+	--gradient: linear-gradient(
+		rgba(64, 93, 230, 1),
+		rgba(131, 58, 180, 1),
+		rgba(193, 53, 132, 1),
+		rgba(225, 48, 108, 1),
+		rgba(253, 29, 29, 1));
+	--background: #0B0E27;
+	--primary: #fff;
+	--accent: #0B6AF9;
+	--info-background: rgba(255, 255, 255, 0.1);
+	--search-background: rgba(150, 150, 255, 0.25);
+	--menu_background: rgba(150, 150, 255, 0.1);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Sarala', sans-serif;
+	min-height: 100vh;
+	background-color: var(--background);
+	color: var(--primary);
+}
+
+.gradient {
+	position: relative;
+	margin: 10px;
+	width: 150px;
+	height: 150px;
+	border-radius: 500px;
+	background-color: var(--background);
+}
+
+.gradient::before {
+	content: '';
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	top: -5px;
+	bottom: -5px;
+	left: -5px;
+	right: -5px;
+	z-index: -1;
+	background: var(--gradient);
+}
+
+.button {
+	padding: 10px 30px;
+	border-radius: 10px;
+	display: inline-block;
+	background-color: var(--info-background);
+}
+
+.button2 {
+	padding: 10px 30px;
+	border-radius: 10px;
+	display: inline-block;
+	background-color: var(--menu_background);
+}
