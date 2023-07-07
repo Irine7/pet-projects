@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+@import url('fonts/instagram-icons/style.css');
 
 :root {
 	/* Color */
 	--gradient: linear-gradient(
+		-75deg,
 		rgba(64, 93, 230, 1),
 		rgba(131, 58, 180, 1),
 		rgba(193, 53, 132, 1),
 		rgba(225, 48, 108, 1),
 		rgba(253, 29, 29, 1));
-	--background: #0B0E27;
-	--primary: #fff;
+
 	--accent: #0B6AF9;
+	--background: #0B0E27;
+	--deault: #A4A4A4;
+	--primary: #fff;
+	
 	--info-background: rgba(255, 255, 255, 0.1);
 	--search-background: rgba(150, 150, 255, 0.25);
 	--menu_background: rgba(150, 150, 255, 0.1);
+
 }
 
 * {
@@ -28,6 +34,7 @@ body {
 	color: var(--primary);
 }
 
+/* Gradient */
 .gradient {
 	position: relative;
 	margin: 10px;
@@ -50,16 +57,83 @@ body {
 	background: var(--gradient);
 }
 
-.button {
-	padding: 10px 30px;
-	border-radius: 10px;
-	display: inline-block;
-	background-color: var(--info-background);
+/* Layout */
+.wrapper {
 }
 
-.button2 {
-	padding: 10px 30px;
+.header {
+	min-height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 55px;
+}
+.content {
+}
+.sidebar {
+}
+
+/* Header */
+.search {
+	display: flex;
+	align-items: center;
+	max-width: 300px;
+	width: 100%;
+	padding: 4px 16px;
+	background-color: var(--search-background);
+	border-radius: 5px;
+}
+
+.search input {
+	margin-left: 50px;
+	padding: 8px 0;
+	flex-grow: 1;
+	border: none;
+	background-color: transparent;
+	color: var(--primary);
+	font-size: 20px;
+}
+
+.search input:focus {
+	outline: none;
+}
+
+.search i {
+	font-size: 31px;
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+}
+.actions__item {
+	font-size: 42px;
+	cursor: pointer;
+}
+
+.actions__item:not(:last-child) {
+	margin-right: 22px;
+}
+
+.new-post-button {
+	display: flex;
+	align-items: center;
 	border-radius: 10px;
+	padding: 3px 9px;
+	background: var(--gradient);
+}
+
+.new-post-button i {
+	font-size: 12px;
 	display: inline-block;
-	background-color: var(--menu_background);
+	margin-right: 22px;
+	padding: 9px;
+	border: 1.5px solid var(--primary);
+	border-radius: 50%;
+}
+
+.new-post-button span {
+	font-size: 25px;
+	font-weight: 700;
+	white-space: nowrap;
 }
