@@ -74,8 +74,14 @@ body {
 	padding: 25px 55px;
 }
 .content {
+	display: flex;
 }
-.sidebar {
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	padding-right: 55px;
 }
 
 /* Header */
@@ -146,6 +152,7 @@ body {
 
 /* Sidebar */
 .sidebar {
+	margin-right: 20px;
 	max-width: 450px;
 }
 
@@ -157,14 +164,36 @@ body {
 	margin-bottom: 110px;
 }
 
+.user_small .user__avatar {
+	display: block;
+	width: 130px;
+	height: 130px;
+	border: 1px solid var(--background);
+}
+
 .user__avatar {
 	width: 240px;
 	height: 240px;
 	display: block;
+	border: 2px solid var(--background);
 }
+
+.user__avatar > img {
+	width: 100%;
+}
+
 .user__name {
 	font-size: 45px;
 	font-weight: 700;
+}
+
+.user_small {
+	margin-bottom: 0;
+}
+
+.user_small .user__nickname  {
+	font-size: 15px;
+	margin-bottom: 0;
 }
 
 .user__name i {
@@ -237,4 +266,37 @@ body {
 	width: 12px;
 	border-radius: 10px;
 	background: var(--gradient);
+}
+
+/* Stories */
+.stories {
+	margin-bottom: 35px;
+	flex-grow: 1;
+}
+
+.stories__slider {
+	display: flex;
+	align-items: center;
+}
+
+.stories__slider-content {
+	display: flex;
+}
+
+.stories__slider-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.stories__slider-next {
+	font-size: 25px;
+	margin-left: 17px;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+
+/* Elements */
+.title {
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
