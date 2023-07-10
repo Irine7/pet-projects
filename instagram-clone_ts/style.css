@@ -81,10 +81,14 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	flex-grow: 1;
+	align-content: flex-start;
 	padding-right: 55px;
 }
 
 /* Header */
+.logo {
+	cursor: pointer;
+}
 .search {
 	display: flex;
 	align-items: center;
@@ -152,8 +156,18 @@ body {
 
 /* Sidebar */
 .sidebar {
+	position: relative;
 	margin-right: 20px;
 	max-width: 450px;
+}
+
+.sidebar .user {
+	margin-bottom: 110px;
+}
+
+.sidebar__fixed {
+	position: sticky;
+	top: 0;
 }
 
 .user {
@@ -161,7 +175,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	max-width: 500px;
-	margin-bottom: 110px;
+	cursor: pointer;
 }
 
 .user_small .user__avatar {
@@ -185,10 +199,6 @@ body {
 .user__name {
 	font-size: 45px;
 	font-weight: 700;
-}
-
-.user_small {
-	margin-bottom: 0;
 }
 
 .user_small .user__nickname  {
@@ -225,7 +235,23 @@ body {
 	margin-right: 15px;
 	font-size: 1.3em;
 }
+.user__row {
+	flex-direction: row;
+	cursor: pointer;
+}
 
+.user__row .user__avatar {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.user__row .user__nickname {
+	margin: 0px 0px 0px 6px;
+	font-size: 15px;
+}
+
+/* Menu */
 .menu {
 
 }
@@ -299,4 +325,71 @@ body {
 	font-size: 50px;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+/* Posts */
+.posts {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -22px;
+	margin-top: 0;
+}
+
+.posts .post {
+	margin: 22px;
+}
+
+.posts > div {
+	width: 380px;
+	margin: -22px 11px 0;
+}
+
+.posts .post {
+	width: 100%;
+}
+
+.posts .post__img {
+	width: 100% !important;
+}
+
+.post__img {
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 380px;
+	height: 570px;
+}
+
+.post__img img {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.post__footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+
+.post__actions {
+	display: flex;
+	align-items: center;
+}
+.post__action {
+	font-size: 20px;
+	cursor: pointer;
+}
+.post__action:not(:last-child) {
+	margin-right: 14px;
+}
+
+.post_horizontal .post__img {
+	width: 480px;
+	height: 320px;
+}
+
+.active {
+	color: red;
 }
