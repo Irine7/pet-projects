@@ -68,7 +68,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 25px 55px;
+	padding: 25px 35px;
 }
 .content {
 	display: flex;
@@ -111,7 +111,7 @@ body {
 }
 
 .search i {
-	font-size: 31px;
+	font-size: 25px;
 }
 
 .actions {
@@ -119,7 +119,7 @@ body {
 	align-items: center;
 }
 .actions__item {
-	font-size: 42px;
+	font-size: 25px;
 	cursor: pointer;
 }
 
@@ -131,7 +131,6 @@ body {
 	display: flex;
 	align-items: center;
 	border-radius: 10px;
-	margin-left: 20px;
 	padding: 3px 9px;
 	background: var(--gradient);
 }
@@ -178,6 +177,7 @@ body {
 .user_small .user__avatar {
 	display: block;
 	width: 130px;
+	margin-right: auto;
 	height: 130px;
 	border: 1px solid var(--background);
 }
