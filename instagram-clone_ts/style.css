@@ -63,9 +63,6 @@ body {
 }
 
 /* Layout */
-.wrapper {
-}
-
 .header {
 	min-height: 80px;
 	display: flex;
@@ -252,10 +249,6 @@ body {
 }
 
 /* Menu */
-.menu {
-
-}
-
 .menu__item {
 	display: flex;
 	align-items: center;
@@ -273,7 +266,6 @@ body {
 	margin-right: 78px;
 	font-size: 1.3em;
 }
-.menu__item span {}
 
 .menu__item_active,
 .menu__item:hover {
