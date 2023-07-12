@@ -149,7 +149,7 @@ body {
 }
 
 .new-post-button span {
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 700;
 	white-space: nowrap;
 }
@@ -197,7 +197,7 @@ body {
 }
 
 .user__name {
-	font-size: 45px;
+	font-size: 35px;
 	font-weight: 700;
 }
 
@@ -214,7 +214,7 @@ body {
 
 .user__nickname {
 	margin-bottom: 20px;
-	font-size: 27px;
+	font-size: 20px;
 	color: var(--deault);
 }
 .user__stat {
@@ -227,7 +227,7 @@ body {
 	margin: 0 22px;
 	padding: 12px 18px;
 	border-radius: 10px;
-	font-size: 35px;
+	font-size: 20px;
 	background-color: var(--info-background);
 }
 
@@ -259,8 +259,8 @@ body {
 .menu__item {
 	display: flex;
 	align-items: center;
-	padding: 15px 60px;
-	font-size: 35px;
+	padding: 10px 30px;
+	font-size: 20px;
 	border-radius: 10px;
 	color: var(--primary);
 }
@@ -314,7 +314,7 @@ body {
 }
 
 .stories__slider-next {
-	font-size: 25px;
+	font-size: 20px;
 	margin-left: 17px;
 	padding: 5px 15px;
 	cursor: pointer;
@@ -322,7 +322,7 @@ body {
 
 /* Elements */
 .title {
-	font-size: 50px;
+	font-size: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -390,6 +390,6 @@ body {
 	height: 320px;
 }
 
-.active {
-	color: red;
+.insta_like_fill:not(:first-child) {
+	color: #fff;
 }
