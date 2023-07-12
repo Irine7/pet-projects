@@ -340,8 +340,8 @@ body {
 }
 
 .posts > div {
-	width: 380px;
-	margin: -22px 11px 0;
+	width: 350px;
+	margin: -22px 5px 0;
 }
 
 .posts .post {
@@ -356,7 +356,7 @@ body {
 	position: relative;
 	border-radius: 10px;
 	overflow: hidden;
-	width: 380px;
+	width: 350px;
 	height: 570px;
 }
 

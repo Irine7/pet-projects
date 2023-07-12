@@ -17,7 +17,7 @@ like.forEach((item, index) => {
 
 // Posts render
 const defaultPostData = {
-	img: 'https://picsum.photos/380/570?grayscale?id=',
+	img: 'https://picsum.photos/350/570?grayscale?id=',
 	user: {
 		avatar: 'https://i.pravatar.cc/240?img=',
 		nickname: '@jane_doe'
