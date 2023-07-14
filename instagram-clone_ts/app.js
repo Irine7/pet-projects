@@ -22,7 +22,8 @@ postsBlock.addEventListener('click', (event) => {
 })
 };
 
-// Posts render
+// Posts generation and render
+{
 const defaultPostData = {
 	img: 'https://picsum.photos/350/570?grayscale?id=',
 	user: {
@@ -98,3 +99,22 @@ const GeneratedPosts = postGenerator(6);
 const postsBlock = document.querySelector('.posts');
 postsBlock.innerHTML = '';
 postsBlock.append(...GeneratedPosts);
+}
+
+// Create new post
+const createNewPost = document.querySelector('.new-post-button');
+const modal = document.querySelector('.modal__wrapper');
+
+// Open modal window if clicked on New Post button
+createNewPost.addEventListener('click', () => {
+	if (modal.classList.contains('hidden')) {
+		modal.classList.remove('hidden');
+	}
+})
+
+// Close modal window if clicked outside it
+modal.addEventListener('click', (event) => {
+	if (event.target.classList.contains('modal__wrapper')) {
+		modal.classList.add('hidden');
+	}
+})
