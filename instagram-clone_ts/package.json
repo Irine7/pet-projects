@@ -1,0 +1,29 @@
+{
+  "name": "instagram-clone_ts",
+  "version": "1.0.0",
+  "description": "Instagram-TypeScript",
+  "main": "app.js'",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Irine7",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.4",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.9.0",
+    "webpack-sources": "^3.2.3"
+  }
+}
