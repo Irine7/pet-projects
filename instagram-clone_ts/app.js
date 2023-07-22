@@ -20,7 +20,7 @@ postsBlock.addEventListener('click', (event) => {
 		}
 	}
 })
-};
+}
 
 // Posts generation and render
 {
