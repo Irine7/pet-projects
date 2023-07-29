@@ -42,22 +42,6 @@ modalElements.saveBtn.addEventListener('click', () => {
 	closeAndClearModal();
 })
 
-function doesHaveErrors() {
-	let isError= false;
-	modalElements.text.classList.remove('modal__error');
-	modalElements.img.classList.remove('modal__error');
-
-	if (!modalElements.text.value) { // if it is empty
-		modalElements.text.classList.add('modal__error');
-		isError = true;
-	}
-	if (!modalElements.img.value) {
-		modalElements.img.classList.add('modal__error');
-		isError = true;
-	}
-	return isError;
-}
-
 // Check form for errors
 function doesHaveErrors() {
 	let isError= false;
