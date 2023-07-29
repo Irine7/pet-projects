@@ -1,12 +1,11 @@
+import { postsBlock } from '../app.js';
+
 export function setLikes() {
-	const postsBlock = document.querySelector('.posts');
-	
 	// Event delegation to a parent node with a class '.post'
 	postsBlock.addEventListener('click', (event) => {
 		// Check if the clicked item was a heart one
 		const target = event.target;
 		const isLikeClicked = target.classList.contains('insta_like') || target.classList.contains('insta_like_fill');
-	
 		// Put/remove 'like' if the clicked item was a heart one
 		if (isLikeClicked) {
 			const parent = target.parentNode;

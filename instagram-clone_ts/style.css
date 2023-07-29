@@ -390,7 +390,7 @@ body {
 	color: #fff;
 }
 
-/* Modal window */
+/* Modal window for New Post */
 
 /* All root elements but not last ones */
 .modal > :not(:last-child) {
@@ -464,4 +464,42 @@ h1 {
 
 .modal__error {
 	border: 1px solid red;
+}
+
+/* Modal window for Comment */
+.modal_comment {
+	margin-bottom: 10px;
+}
+
+.modal_comment {
+	padding: 20px;
+	width: 45vw;
+	border-radius: 10px;
+	text-align: center;
+	color: #000;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.modal__text_comment {
+	padding: 10px;
+	width: 95%;
+	height: 55%;;
+}
+
+.modal__wrapper_comment {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hidden {
+	display: none;
 }
